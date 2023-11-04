@@ -1,0 +1,38 @@
+{
+  "name": "movies-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint --fix src --ext .js,.jsx,.ts,.tsx",
+    "test": "nyc mocha --require ts-node/register test/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/config": "^3.3.2",
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "mongoose": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.9",
+    "@types/express": "^4.17.20",
+    "@types/mocha": "^10.0.3",
+    "@types/supertest": "^2.0.15",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "chai": "^4.3.10",
+    "eslint": "^8.53.0",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "type": "commonjs"
+}
